@@ -30,3 +30,16 @@ print(df_attrition_yes[['Age','YearsAtCompany']].head(10))
 
 #checking the number of records in the data frame for Attrition = yes
 print('The number of rows are: ',len(df_attrition_yes.index))
+
+"""the same can be done using the following code"""
+print('The number of rows are: ',df_attrition_yes.shape)
+print('The number of rows are: ',df_attrition_yes['Age'].count())
+
+#exploring the environmentSatisfaction and JobSatisfaction
+print(df_attrition_yes[['EnvironmentSatisfaction','JobSatisfaction']])
+
+#exploring performance rate
+print(df_attrition_yes[['PerformanceRating']].min(), df_attrition_yes[['PerformanceRating']].max())
+
+#exploring years since last promotion
+print(df_attrition_yes[['YearsSinceLastPromotion']].min(),df_attrition_yes[['YearsSinceLastPromotion']].max())
